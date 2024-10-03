@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    animation: gradient 10s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% { background: linear-gradient(135deg, #74ebd5, #acb6e5); }
+    50% { background: linear-gradient(135deg, #f8b195, #f67280); }
+    100% { background: linear-gradient(135deg, #74ebd5, #acb6e5); }
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    animation: bounceIn 1s ease-out;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #74ebd5;
+    box-shadow: 0px 0px 8px rgba(116, 235, 213, 0.7);
+  }
+  
+  .button {
+    background: linear-gradient(135deg, #f67280, #f8b195);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(246, 114, 128, 0.3);
+  }
+  
+  .extra {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .extra a {
+    color: #f67280;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .extra a:hover {
+    color: #c06c84;
+  }
+
+  
+  

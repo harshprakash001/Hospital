@@ -1,0 +1,125 @@
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #f093fb, #f5576c);
+    animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background: linear-gradient(120deg, #f093fb, #f5576c); }
+    50% { background: linear-gradient(120deg, #43e97b, #38f9d7); }
+    100% { background: linear-gradient(120deg, #f093fb, #f5576c); }
+}
+
+.formWrapper {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input:focus {
+    border-color: #f093fb;
+    box-shadow: 0px 0px 8px rgba(240, 147, 251, 0.6);
+}
+
+.button {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(245, 87, 108, 0.3);
+}
+
+.extra {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.extra a {
+    color: #f5576c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.extra a:hover {
+    color: #d43f58;
+}
+
+/* Navbar and Footer Styles */
+
+.navbar, .footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.footer {
+    margin-top: auto;
+}

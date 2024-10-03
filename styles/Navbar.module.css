@@ -1,0 +1,74 @@
+/* styles/Navbar.module.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px 0;
+    transition: all 0.4s ease;
+    z-index: 1000;
+}
+
+.scrolled {
+    background: rgba(37, 117, 252, 0.85);
+    padding: 10px 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logoText {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.logoText:hover {
+    color: #fff4b8;
+    text-shadow: 0px 0px 8px rgba(255, 244, 184, 0.8);
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s;
+}
+
+.link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.link:hover::before {
+    left: 0;
+}
