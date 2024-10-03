@@ -623,7 +623,8 @@ export default function Appointments() {
                                     <option value="">Choose Doctor</option>
                                     <option value="Dr. Smith">Dr. Smith</option>
                                     <option value="Dr. Johnson">Dr. Johnson</option>
-                                    <option value="Dr. Johnson">Dr. Bala</option>
+                                    <option value="Dr. Bala">Dr. Bala</option>
+                                    <option value="Dr. Pal">Dr. Pal</option>
                                 </select>
                             </div>
 
